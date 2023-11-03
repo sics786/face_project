@@ -1,3 +1,7 @@
+import mysql.connector
+mydb=mysql.connector.connect(host="localhost",user="root",passwd="sics2023",database='shihab')
+mycursor=mydb.cursor()
+
 from PIL import Image
 import streamlit as st
 st.title('Face Recognition')
